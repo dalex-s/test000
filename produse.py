@@ -10,8 +10,8 @@ my_producer = KafkaProducer(
     value_serializer = lambda x:dumps(x).encode('utf-8')  
     )
 for n in range(1000):  
-    #my_data = {'num' : n,'any' : n+n}  
-    my_data = {'x':n}
+    my_data = {'num' : n,'any' : n+n}  
+    #my_data = {'x':n}
     my_producer.send('test001', value = my_data)  
     sleep(0.01)  
     
