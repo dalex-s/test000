@@ -16,6 +16,7 @@ my_consumer = KafkaConsumer(
 
 
 
+
 for message in my_consumer:  
     message = message.value  
     #collection.insert_one(message)  

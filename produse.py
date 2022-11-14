@@ -4,6 +4,7 @@ from json import dumps
 from kafka import KafkaProducer
 
 
+
 # initializing the Kafka producer  
 my_producer = KafkaProducer(  
     bootstrap_servers = ['192.168.1.67:9092'],  
