@@ -14,9 +14,6 @@ my_consumer = KafkaConsumer(
      value_deserializer = lambda x : loads(x.decode('utf-8'))  
      )
 
-
-
-
 for message in my_consumer:  
     message = message.value  
     #collection.insert_one(message)  
